@@ -1,7 +1,8 @@
-package com.example.jerom.controle_app
+package com.example.jerom.controle_app.activity
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.example.jerom.controle_app.R
 
 class MainActivity : AppCompatActivity() {
 
