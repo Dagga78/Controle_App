@@ -8,19 +8,31 @@
         android:orientation="vertical"
         tools:context=".activity.MainActivity">
 
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:orientation="horizontal" android:layout_gravity="center">
+
+        <Button
+                android:text="Liste"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/button2"
+        />
+        <Button
+                android:text="Geolocalisation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/button"
+
+        />
+        <Button
+                android:text="Deconnexion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/button3"/>
+
+    </LinearLayout>
     <FrameLayout android:layout_width="match_parent"
                  android:layout_height="match_parent"
-                 android:id="@+id/framelayout"/>
+                 android:id="@+id/framelayout" android:layout_alignParentStart="true"
+                 android:layout_alignParentTop="true"/>
 
-    <LinearLayout android:layout_width="wrap_content" android:layout_height="71dp" android:background="#535353"
-                  android:layout_gravity="bottom|center">
-        <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/button"/>
-        <Button
-                android:text="Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" android:id="@+id/button2"/>
-    </LinearLayout>
+
 </LinearLayout>
