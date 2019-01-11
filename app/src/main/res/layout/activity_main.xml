@@ -12,8 +12,8 @@
                  android:layout_height="match_parent"
                  android:id="@+id/framelayout"/>
 
-    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="#535353"
-    android:layout_gravity="bottom|center">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="71dp" android:background="#535353"
+                  android:layout_gravity="bottom|center">
         <Button
                 android:text="Button"
                 android:layout_width="wrap_content"

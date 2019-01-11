@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
+import com.example.jerom.controle_app.PrefsModel
 import com.example.jerom.controle_app.R
 
 class SplashScreen : AppCompatActivity() {
@@ -13,9 +14,14 @@ class SplashScreen : AppCompatActivity() {
         setContentView(R.layout.activity_splash_screen)
 
         Handler().postDelayed({
-            val intent = Intent(applicationContext, LoginActivity::class.java)
+
+            val intent: Intent = if (PrefsModel.userMail.isEmpty())
+                Intent(applicationContext, LoginActivity::class.java)
+            else
+                Intent(applicationContext, MainActivity::class.java)
+
             startActivity(intent)
-            //finish()
+            finish()
 
         }, 1000)
     }
