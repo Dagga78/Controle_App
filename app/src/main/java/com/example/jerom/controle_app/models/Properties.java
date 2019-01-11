@@ -14,13 +14,13 @@ public class Properties {
     private String place;
     @SerializedName("time")
     @Expose
-    private Integer time;
+    private long time;
     @SerializedName("updated")
     @Expose
-    private Integer updated;
+    private long updated;
     @SerializedName("tz")
     @Expose
-    private Integer tz;
+    private long tz;
     @SerializedName("url")
     @Expose
     private String url;
@@ -44,10 +44,10 @@ public class Properties {
     private String status;
     @SerializedName("tsunami")
     @Expose
-    private Integer tsunami;
+    private long tsunami;
     @SerializedName("sig")
     @Expose
-    private Integer sig;
+    private long sig;
     @SerializedName("net")
     @Expose
     private String net;
@@ -74,7 +74,7 @@ public class Properties {
     private Double rms;
     @SerializedName("gap")
     @Expose
-    private Integer gap;
+    private long gap;
     @SerializedName("magType")
     @Expose
     private String magType;
@@ -101,27 +101,27 @@ public class Properties {
         this.place = place;
     }
 
-    public Integer getTime() {
+    public long getTime() {
         return time;
     }
 
-    public void setTime(Integer time) {
+    public void setTime(long time) {
         this.time = time;
     }
 
-    public Integer getUpdated() {
+    public long getUpdated() {
         return updated;
     }
 
-    public void setUpdated(Integer updated) {
+    public void setUpdated(long updated) {
         this.updated = updated;
     }
 
-    public Integer getTz() {
+    public long getTz() {
         return tz;
     }
 
-    public void setTz(Integer tz) {
+    public void setTz(long tz) {
         this.tz = tz;
     }
 
@@ -181,19 +181,19 @@ public class Properties {
         this.status = status;
     }
 
-    public Integer getTsunami() {
+    public long getTsunami() {
         return tsunami;
     }
 
-    public void setTsunami(Integer tsunami) {
+    public void setTsunami(long tsunami) {
         this.tsunami = tsunami;
     }
 
-    public Integer getSig() {
+    public long getSig() {
         return sig;
     }
 
-    public void setSig(Integer sig) {
+    public void setSig(long sig) {
         this.sig = sig;
     }
 
@@ -261,11 +261,11 @@ public class Properties {
         this.rms = rms;
     }
 
-    public Integer getGap() {
+    public long getGap() {
         return gap;
     }
 
-    public void setGap(Integer gap) {
+    public void setGap(long gap) {
         this.gap = gap;
     }
 

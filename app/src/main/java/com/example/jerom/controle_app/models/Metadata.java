@@ -8,7 +8,7 @@ public class Metadata {
 
     @SerializedName("generated")
     @Expose
-    private Integer generated;
+    private Long generated;
     @SerializedName("url")
     @Expose
     private String url;
@@ -25,11 +25,11 @@ public class Metadata {
     @Expose
     private Integer count;
 
-    public Integer getGenerated() {
+    public Long getGenerated() {
         return generated;
     }
 
-    public void setGenerated(Integer generated) {
+    public void setGenerated(Long generated) {
         this.generated = generated;
     }
 
