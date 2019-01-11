@@ -7,4 +7,22 @@
         android:layout_height="match_parent"
         tools:context=".activity.SplashScreen">
 
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="1">
+
+        <TextView
+                android:text="WELLCOME ON GRAVITY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/wellcome" android:layout_weight="1"
+                tools:text="WELLCOME ON GRAVITY" android:textSize="36sp" android:textStyle="bold|italic"
+                android:textAlignment="center" android:textAllCaps="false"
+                android:textColor="#000dfa"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/gravityv2" android:id="@+id/imageView3"
+                android:layout_weight="1" android:adjustViewBounds="true"/>
+
+    </LinearLayout>
 </LinearLayout>
