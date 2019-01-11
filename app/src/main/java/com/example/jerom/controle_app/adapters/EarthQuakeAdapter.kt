@@ -25,7 +25,7 @@ class EarthQuakeAdapter(private val earthquake: List<Feature>) : RecyclerView.Ad
 
             itemView.textPlace.text = earthQuake.properties.place.toString()
             itemView.textMag.text = earthQuake.properties.mag.toString()
-            itemView.textAlert.text = earthQuake.properties.detail.toString()
+            itemView.textAlert.text = earthQuake.properties.type.toString()
 
 
         }

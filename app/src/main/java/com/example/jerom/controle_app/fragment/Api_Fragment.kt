@@ -44,14 +44,12 @@ class Api_Fragment : Fragment() {
                     recyclerEarthQuake.layoutManager = LinearLayoutManager(context)
                     val adapter = EarthQuakeAdapter(response.body()!!.features)
                     recyclerEarthQuake.adapter = adapter
-                    context?.toast(response.body()?.features?.get(0)?.properties!!.place)
                 }
                 else
                     context?.toast("" + response.code() + response.message())
             }
 
             override fun onFailure(call: Call<EarthQuake>, t: Throwable) {
-                context!!.toast("onfailure")
             }
 
         })
