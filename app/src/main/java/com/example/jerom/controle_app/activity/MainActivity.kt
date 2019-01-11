@@ -20,7 +20,10 @@ class MainActivity : AppCompatActivity() {
     fun menuClick(view: View) {
         when (view.id) {
             R.id.button2 -> replaceFragment(Api_Fragment())
-            R.id.button -> replaceFragment(Api_Fragment())
+            R.id.button -> {
+                val intent = Intent(applicationContext, MapsActivity::class.java)
+                startActivity(intent)
+            }
             R.id.button3 -> {
                 PrefsModel.userMail = ""
                 val intent = Intent(applicationContext, LoginActivity::class.java)
