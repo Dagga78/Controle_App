@@ -7,7 +7,7 @@ class RetrofitClient {
 
     fun getEarthQuake(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson")
+            .baseUrl("https://earthquake.usgs.gov")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
